@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+</head>
+<body>
+    <h1> Sistema de Médias</h1>
+    <p> Seja muito bem vindo, querido(a) aluno!</p>
+    <p> Consulte as suas notas do Colégio Estadual Fictícius</p>
+    <script>
+        debugger
+/* COLETANDO O NOME DOS CLIENTES */
+        var nomePrimeiroCliente = prompt("Insira o nome do PRIMEIRO cliente: ");
+        var nomeSegundoCliente = prompt("Insira o nome do SEGUNDO cliente: ");
+        var nomeTerceiroCliente = prompt("Insira o nome do TERCEIRO cliente: ");
+
+/* COLETANDO AS NOTAS DOS CLIENTES */
+        var primeiraNota = Number(prompt("Digite a nota do(a) " + nomePrimeiroCliente));
+        var segundaNota = Number(prompt("Digite a nota do(a) " + nomeSegundoCliente));
+        var terceiraNota = Number(prompt("Digite a nota do(a) " + nomeTerceiroCliente));
+
+/* EXECUÇÃO DA OPERAÇÃO */
+        var soma = primeiraNota + segundaNota + terceiraNota;
+        var mediaTotal = soma / 3;
+
+/* CONDIÇÕES E MOSTRAR */
+        if (mediaTotal > 100){
+            document.write("Parabéns a média de vocês é " + mediaTotal);
+        }else if (mediaTotal > 50 && < 100){
+            document.write("Parabéns, estão dentro da média " + mediaTotal);
+        }else if (mediaTotal < 50 && mediaTotal > 20){
+            document.write("Arrastado... tomem cuidado para não acabar sendo reprovados, a média de vocês é " + mediaTotal);
+        }else  (mediaTotal < 20){
+            document.write("Pessoal,vocês estão reprovados,melhor estudar mais... Infelizmente a média de vocês é " + mediaTotal);
+    </script>
+    
+</body>
+</html>
